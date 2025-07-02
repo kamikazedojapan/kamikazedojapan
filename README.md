@@ -14,7 +14,7 @@
 
 > _"Busco oportunidades para desenvolver minhas habilidades técnicas e aplicar meus conhecimentos na prática desenvolvendo projetos."_
 
----
+
 
 ## 🛠️ Tecnologias & Ferramentas
 
@@ -43,17 +43,13 @@
 ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Selenium](https://img.shields.io/badge/-Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
----
 
 ## 📊 Estatísticas GitHub
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kamikazedojapan&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamikazedojapan&layout=compact&langs_count=7&theme=radical"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamikazedojapan&theme=radical" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamikazedojapan&theme=radical" alt="GitHub Streak" />    
 </div>
 
 ---
