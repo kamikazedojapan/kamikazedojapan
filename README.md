@@ -66,7 +66,7 @@
 📊 Gráficos Interativos • 📂 Filtros Avançados  
 **Tech:** Python, Dash, Plotly, Pandas  
 
-<img align="right" top=15 height=150 src=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZwNmVkMHpnang1eWFuZ2oxbGE2dnR1aDVwMGtmbjRyaTEzMHdkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/12W5Sg2koWYnwA/giphy.gif>
+<img align="right" top=50 height=150 src=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZwNmVkMHpnang1eWFuZ2oxbGE2dnR1aDVwMGtmbjRyaTEzMHdkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/12W5Sg2koWYnwA/giphy.gif>
 
 ## 🌐 Idiomas
 
