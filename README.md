@@ -72,6 +72,7 @@
 
 **Tech:** MongoDB, Express, React, Node.js  
 
+---
 ### 💰 Sistema Financeiro de Receita e Despesas
 **Data Analytics | Python**  
 
@@ -79,6 +80,7 @@
 
 **Tech:** Python, Dash, Plotly, Pandas
 
+---
 ### 📊 Dashboard Financeiro
 **Data Visualization | Python**
 
