@@ -18,7 +18,7 @@
 
 ## 🚀 Sobre Mim
 
-🎓 **Graduando em Análise e Desenvolvimento de Sistemas** – IFBA (3º semestre)  
+🎓 **Graduando em Análise e Desenvolvimento de Sistemas** – IF Baiano (3º semestre)  
 ⚡ **Técnico em Eletromecânica** – Escola Protec (2022–2023)  
 🎯 **Bootcamp Infinity School** – Abr/2024 - Jun/2025  
 🌟 **Desenvolvedor Full Stack** em constante evolução  
