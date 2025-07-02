@@ -14,8 +14,6 @@
 
 > _"Busco oportunidades para desenvolver minhas habilidades técnicas e aplicar meus conhecimentos na prática desenvolvendo projetos."_
 
-
-
 ## 🛠️ Tecnologias & Ferramentas
 
 ### 🎨 Frontend
@@ -64,15 +62,25 @@
 ### 💰 Sistema Financeiro de Receita e Despesas
 **Data Analytics | Python**  
 📊 Gráficos Interativos • 📂 Filtros Avançados  
-**Tech:** Python, Dash, Plotly, Pandas  
+**Tech:** Python, Dash, Plotly, Pandas
 
-<img align="right" top=50 height=150 src=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZwNmVkMHpnang1eWFuZ2oxbGE2dnR1aDVwMGtmbjRyaTEzMHdkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/12W5Sg2koWYnwA/giphy.gif>
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHc4MGc0MzdlYmhkeHNteWpjMWl3ZXlpM2NvYzBmZjlnMzRrNW92biZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/fByehYIrOIzO8XolJK/giphy.webp" width="200" alt="GIF 3"></td>
+      <td><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3ByZndvd29oYWFvcTAzaWZkY3N5NnZtMDVjYzQ5NTg0NWVrMzd3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="200" alt="GIF 1"></td>
+      <td><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3k5bDZ2a2xoc3cyZHp0NjQxejl6MWhucm9zbGl6NGVrdWJ3N3JvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgzoKnwFNmISR8I/giphy.gif" width="200" alt="GIF 3"></td>
+    </tr>
+  </table>
+</div>
 
 ## 🌐 Idiomas
 
 🇧🇷 **Português**: Nativo  
 🇺🇸 **Inglês**: Fluente  
 🇪🇸 **Espanhol**: Intermediário  
+
+
 
 ---
 
