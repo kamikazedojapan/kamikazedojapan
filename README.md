@@ -1,7 +1,7 @@
 # Eu sou Márcio Reis e sou apaixonado por tecnologia 👨‍💻</>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=D22626&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack;Amante+de+Open+Source;Foco+em+Front+e+Back-end;Explorando+Novas+Tecnologias;Sempre em busca de soluções" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=D22626&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack;Amante+de+Open+Source;Foco+em+Front+e+Back-end;Explorando+Novas+Tecnologias" alt="Typing SVG" />
 </div>
 
 ## 🎬 Um pouco da vibe do meu GitHub
