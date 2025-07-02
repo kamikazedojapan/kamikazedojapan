@@ -77,7 +77,7 @@
 
 ### 📊 Dashboard Financeiro
 **Data Visualization | Python**
-Dashboard interativo para visualização de dados financeiros • Interface web moderna com gráficos dinâmicos
+📊 Dashboard interativo para dados financeiros • 🌐 Interface moderna com gráficos dinâmicos
 **Tech:** Python, Streamlit, Pandas, Plotly Express
 
 ## 🌐 Idiomas
