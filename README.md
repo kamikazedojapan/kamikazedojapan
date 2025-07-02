@@ -66,13 +66,17 @@
 ## 🧪 Projetos em Destaque
 
 ### 🗞️ Website de Notícias
-**Full Stack | MERN Stack**  
+**Full Stack | MERN Stack**
+
 🔒 Autenticação JWT • 📚 Painel Admin • 💬 Comentários  
+
 **Tech:** MongoDB, Express, React, Node.js  
 
 ### 💰 Sistema Financeiro de Receita e Despesas
 **Data Analytics | Python**  
+
 📊 Gráficos Interativos • 📂 Filtros Avançados  
+
 **Tech:** Python, Dash, Plotly, Pandas
 
 ### 📊 Dashboard Financeiro
