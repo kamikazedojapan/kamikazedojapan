@@ -1,7 +1,19 @@
 # Eu sou Márcio Reis e sou apaixonado por tecnologia 👨‍💻</>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=D22626&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack;Amante+de+Open+Source;Foco+em+Front+e+Back-end;Explorando+Novas+Tecnologias" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=D22626&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack;Amante+de+Open+Source;Foco+em+Front+e+Back-end;Explorando+Novas+Tecnologias;Sempre em busca de soluções" alt="Typing SVG" />
+</div>
+
+## 🎬 Um pouco da vibe do meu GitHub
+
+<div align="left">
+  <table>
+    <tr>
+      <td><img src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHc4MGc0MzdlYmhkeHNteWpjMWl3ZXlpM2NvYzBmZjlnMzRrNW92biZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/fByehYIrOIzO8XolJK/giphy.webp" width="200" alt="GIF 3"></td>
+      <td><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3ByZndvd29oYWFvcTAzaWZkY3N5NnZtMDVjYzQ5NTg0NWVrMzd3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="200" alt="GIF 1"></td>
+      <td><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3k5bDZ2a2xoc3cyZHp0NjQxejl6MWhucm9zbGl6NGVrdWJ3N3JvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgzoKnwFNmISR8I/giphy.gif" width="200" alt="GIF 3"></td>
+    </tr>
+  </table>
 </div>
 
 ## 🚀 Sobre Mim
@@ -63,16 +75,6 @@
 **Data Analytics | Python**  
 📊 Gráficos Interativos • 📂 Filtros Avançados  
 **Tech:** Python, Dash, Plotly, Pandas
-
-<div align="left">
-  <table>
-    <tr>
-      <td><img src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHc4MGc0MzdlYmhkeHNteWpjMWl3ZXlpM2NvYzBmZjlnMzRrNW92biZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/fByehYIrOIzO8XolJK/giphy.webp" width="200" alt="GIF 3"></td>
-      <td><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3ByZndvd29oYWFvcTAzaWZkY3N5NnZtMDVjYzQ5NTg0NWVrMzd3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="200" alt="GIF 1"></td>
-      <td><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3k5bDZ2a2xoc3cyZHp0NjQxejl6MWhucm9zbGl6NGVrdWJ3N3JvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgzoKnwFNmISR8I/giphy.gif" width="200" alt="GIF 3"></td>
-    </tr>
-  </table>
-</div>
 
 ## 🌐 Idiomas
 
