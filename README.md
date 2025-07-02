@@ -64,7 +64,7 @@
 📊 Gráficos Interativos • 📂 Filtros Avançados  
 **Tech:** Python, Dash, Plotly, Pandas
 
-<div align="center">
+<div align="left">
   <table>
     <tr>
       <td><img src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHc4MGc0MzdlYmhkeHNteWpjMWl3ZXlpM2NvYzBmZjlnMzRrNW92biZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/fByehYIrOIzO8XolJK/giphy.webp" width="200" alt="GIF 3"></td>
