@@ -18,7 +18,7 @@
 
 ## 🚀 Sobre Mim
 
-🧑‍💻 **Programa de Autonomia e Renda Petrobrás** - Senai Dendezeiros  
+🧑‍💻 **Programa de Autonomia e Renda Petrobrás (Desenvolvivmento Full Stack)** - Senai Dendezeiros  
 🎓 **Graduando em Análise e Desenvolvimento de Sistemas** – IF Baiano (5º semestre)  
 🎯 **Bootcamp Infinity School** – Abr/2024 - Jun/2025  
 🌟 **Desenvolvedor Full Stack** em constante evolução  
@@ -130,7 +130,7 @@
 
 ```javascript
 const marcio = {
-    location: "Catu, Bahia - Brasil",
+    location: "Lauro de Freitas, Bahia - Brasil",
     currentFocus: "Desenvolvimento Full Stack",
     learningGoals: ["DevOps", "Cloud Computing", "Microservices"],
     lookingFor: "Oportunidades de estágio e projetos desafiadores",
