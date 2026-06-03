@@ -18,7 +18,7 @@
 
 ## 🚀 Sobre Mim
 
-🧑‍💻 **Programa de Autonomia e Renda Petrobrás** - Senai Dendezeiros
+🧑‍💻 **Programa de Autonomia e Renda Petrobrás** - Senai Dendezeiros  
 🎓 **Graduando em Análise e Desenvolvimento de Sistemas** – IF Baiano (5º semestre)  
 🎯 **Bootcamp Infinity School** – Abr/2024 - Jun/2025  
 🌟 **Desenvolvedor Full Stack** em constante evolução  
