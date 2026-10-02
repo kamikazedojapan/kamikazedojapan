@@ -18,7 +18,7 @@
 
 ## 🚀 Sobre Mim
 
-🧑‍💻 **Programa de Autonomia e Renda Petrobrás (Desenvolvivmento Full Stack)** - Senai Dendezeiros  
+🧑‍💻 **Programa de Autonomia e Renda Petrobras (Desenvolvivmento Full Stack)** - Senai Dendezeiros  
 🎯 **Bootcamp Infinity School** – Abr/2024 - Jun/2025  
 🌟 **Desenvolvedor Full Stack** em constante evolução  
 🧠 **Pensamento lógico-racional** | **Autodidata**  
