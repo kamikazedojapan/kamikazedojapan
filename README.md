@@ -46,8 +46,6 @@ Meu objetivo é transformar **dados, matemática e código em ferramentas úteis
 
 <td width="35%" align="center">
 
-<img src="./assets/profile.jpg" width="260px" alt="Márcio Reis"/>
-
 </td>
 
 </tr>
