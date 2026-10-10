@@ -1,5 +1,3 @@
-<div align="center">
-
 # 👋 Olá, eu sou Márcio Reis
 
 ### Quantitative Developer • Software Developer • Python • Financial Research
@@ -16,8 +14,6 @@ e sistemas para pesquisa quantitativa.
 <a href="https://linkedin.com/in/marciodevjr">
   <img src="https://img.shields.io/badge/LinkedIn-Márcio_Reis-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
-
-</div>
 
 ---
 
