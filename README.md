@@ -1,137 +1,191 @@
-# Meu nome é Márcio Reis e sou apaixonado por tecnologia 👨‍💻</>
-
 <div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=D22626&center=true&vCenter=true&width=600&lines=Desenvolvedor+Web+Full+Stack;Apaixonado+por+tecnologia+e+inovação;Criando+soluções+eficazes+para+web;Em+constante+evolução+profissional" alt="Typing SVG" />
+
+# 👋 Olá, eu sou Márcio Reis
+
+### Quantitative Developer • Software Developer • Python • Financial Research
+
+Desenvolvo ferramentas orientadas por dados, aplicações financeiras  
+e sistemas para pesquisa quantitativa.
+
+<br>
+
+<a href="https://github.com/kamikazedojapan">
+  <img src="https://img.shields.io/badge/GitHub-kamikazedojapan-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
+
+<a href="https://linkedin.com/in/marciodevjr">
+  <img src="https://img.shields.io/badge/LinkedIn-Márcio_Reis-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
+
 </div>
 
-## 🎬 Um pouco da vibe do meu GitHub
+---
 
-<div align="left">
-  <table>
-    <tr>
-      <td><img src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHc4MGc0MzdlYmhkeHNteWpjMWl3ZXlpM2NvYzBmZjlnMzRrNW92biZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/fByehYIrOIzO8XolJK/giphy.webp" width="200" alt="GIF 3"></td>
-      <td><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3ByZndvd29oYWFvcTAzaWZkY3N5NnZtMDVjYzQ5NTg0NWVrMzd3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="200" alt="GIF 1"></td>
-      <td><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3k5bDZ2a2xoc3cyZHp0NjQxejl6MWhucm9zbGl6NGVrdWJ3N3JvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgzoKnwFNmISR8I/giphy.gif" width="200" alt="GIF 3"></td>
-    </tr>
-  </table>
-</div>
+<table>
+<tr>
 
-## 🚀 Sobre Mim
+<td width="65%">
 
-🧑‍💻 **Programa de Autonomia e Renda Petrobras (Desenvolvivmento Full Stack)** - Senai Dendezeiros  
-🎯 **Bootcamp Infinity School** – Abr/2024 - Jun/2025  
-🌟 **Desenvolvedor Full Stack** em constante evolução  
-🧠 **Pensamento lógico-racional** | **Autodidata**  
+## 🚀 Sobre mim
 
-> _"Busco oportunidades para desenvolver minhas habilidades técnicas e aplicar meus conhecimentos na prática desenvolvendo projetos."_
+Sou desenvolvedor com interesse em **engenharia de software, análise quantitativa, mercados financeiros e sistemas orientados por dados**.
 
-## 🛠️ Tecnologias & Ferramentas
+Atualmente concentro meus estudos e projetos na interseção entre:
 
-### 🎨 Frontend
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- 🐍 Python
+- 📊 Análise de dados
+- 📈 Quantitative Finance
+- 🧮 Estatística e matemática aplicada
+- ⚙️ Engenharia de Software
+- 🤖 AI Engineering
+- 📉 Trading sistemático e algorítmico
+
+Meu objetivo é transformar **dados, matemática e código em ferramentas úteis para pesquisa, análise e tomada de decisão**.
+
+</td>
+
+<td width="35%" align="center">
+
+<img src="./assets/profile.jpg" width="260px" alt="Márcio Reis"/>
+
+</td>
+
+</tr>
+</table>
+
+---
+
+## 🔬 Atualmente
+
+🧪 Desenvolvendo o **Laboratório Quantitativo**
+
+📊 Construindo ferramentas para pesquisa e avaliação de estratégias quantitativas
+
+📈 Estudando **Quantitative Finance, Algorithmic Trading e Factor Investing**
+
+🧮 Aprofundando conhecimentos em **estatística, probabilidade e matemática financeira**
+
+⚙️ Explorando arquitetura de sistemas de trading com **NautilusTrader**
+
+🤖 Estudando aplicações de **AI Engineering** em sistemas financeiros
+
+---
+
+# 🚀 Featured Projects
+
+## 🧪 Laboratório Quantitativo
+
+Plataforma experimental para pesquisa, backtesting e avaliação de estratégias quantitativas.
+
+O projeto foi criado como um ambiente para estudar e implementar conceitos de **quantitative finance**, permitindo experimentar estratégias, métricas e modelos de forma reproduzível.
+
+**Principais tecnologias:**
+
+`Python` `Pandas` `NumPy` `Streamlit` `Pytest`
+
+🔗 [Ver repositório](https://github.com/kamikazedojapan/Laboratorio-Quantitativo)
+
+---
+
+## 📊 US Quant Factor Dashboard
+
+Dashboard de pesquisa multifatorial voltado para análise sistemática de ações do mercado americano.
+
+O projeto explora conceitos de **factor investing**, avaliação histórica e construção de sistemas quantitativos de análise.
+
+**Principais tecnologias:**
+
+`Python` `Streamlit` `Pandas` `Quantitative Finance`
+
+🔗 [Ver repositório](https://github.com/kamikazedojapan/US-Quant-Factor-Dashboard)
+
+---
+
+## 💰 Fluxo Controle de Gastos
+
+Sistema web para organização financeira e controle de orçamento diário e mensal.
+
+A aplicação calcula limites de gastos e acompanha automaticamente o saldo disponível ao longo do mês.
+
+**Principais tecnologias:**
+
+`Node.js` `Express` `MongoDB` `JavaScript`
+
+🔗 [Ver repositório](https://github.com/kamikazedojapan/Fluxo_Controle_de_Gastos)
+
+---
+
+## ⚙️ Práticas DevOps
+
+Laboratório pessoal de DevOps contendo automações, scripts, monitoramento, Docker e infraestrutura.
+
+**Principais tecnologias:**
+
+`Linux` `Bash` `Docker` `Docker Compose` `PostgreSQL`
+
+🔗 [Ver repositório](https://github.com/kamikazedojapan/Praticas-DevOps-2026)
+
+---
+
+# 🛠️ Tech Stack
+
+## 🐍 Quant & Data
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+---
+
+## 🌐 Web Development
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/-React-5ED3F3?style=for-the-badge&logo=react&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-808080?style=for-the-badge&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/-Next.js-111111?style=for-the-badge&logo=next.js&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/-Bootstrap-7B11F9?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-### 🧩 Backend
-![Node.js](https://img.shields.io/badge/-Node.js-303030?style=for-the-badge&logo=node.js&logoColor=68D391)
-![Express](https://img.shields.io/badge/-Express-303030?style=for-the-badge&logo=express&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![C](https://img.shields.io/badge/-C-0A0AFF?style=for-the-badge&logo=c&logoColor=white)
-
-### 🗃️ Banco de Dados
-![MySQL](https://img.shields.io/badge/-MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-10AA50?style=for-the-badge&logo=mongodb&logoColor=white)
-
-### 🛠️ Ferramentas e Bibliotecas
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Pandas](https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Selenium](https://img.shields.io/badge/-Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-
-
-## 📊 Estatísticas GitHub
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kamikazedojapan&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamikazedojapan&layout=compact&langs_count=7&theme=radical"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamikazedojapan&theme=radical" alt="GitHub Streak" />    
-</div>
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 
 ---
 
-## 🧪 Projetos em Destaque
+## 🗃️ Databases
 
-### 🗞️ Website de Notícias
-**Full Stack | MERN Stack**
-
-🔒 Autenticação JWT • 📚 Painel Admin • 💬 Comentários  
-
-**Tech:** MongoDB, Express, React, Node.js  
-
----
-### 💰 Sistema Financeiro de Receita e Despesas
-**Data Analytics | Python**  
-
-📊 Gráficos Interativos • 📂 Filtros Avançados  
-
-**Tech:** Python, Dash, Plotly, Pandas
-
----
-### 📊 Dashboard Financeiro
-**Data Visualization | Python**
-
-📊 Dashboard interativo para dados financeiros • 🌐 Interface moderna com gráficos dinâmicos
-
-**Tech:** Python, Streamlit, Pandas, Plotly Express
-
-## 🌐 Idiomas
-
-🇧🇷 **Português**: Nativo  
-🇺🇸 **Inglês**: Fluente  
-🇪🇸 **Espanhol**: Intermediário  
-
-
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ---
 
-## 📈 Atividade no GitHub
+## ⚙️ DevOps & Tools
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kamikazedojapan&theme=react-dark&hide_border=true&area=true" />
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kamikazedojapan&theme=radical&no-frame=false&no-bg=false&margin-w=4" />
-</div>
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
 
-## 📫 Vamos Conectar?
+# 📚 Atualmente estudando
 
-<div align="center">
-  <a href="https://linkedin.com/in/marciodevjr"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/kamikazedojapan"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="mailto:vi.nimarcio@hotmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://wa.me/5571992075016"><img src="https://img.shields.io/badge/-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
-</div>
-
----
-
-## 💼 Status
-
-```javascript
-const marcio = {
-    location: "Lauro de Freitas, Bahia - Brasil",
-    currentFocus: "Desenvolvimento Full Stack",
-    learningGoals: ["DevOps", "Cloud Computing", "Microservices"],
-    lookingFor: "Oportunidades de estágio e projetos desafiadores",
-    funFact: "Sempre em busca de novos desafios tecnológicos!"
-};
+```text
+Quantitative Finance
+│
+├── 📊 Estatística & Probabilidade
+│
+├── 📈 Factor Investing
+│
+├── 🧮 Matemática Financeira
+│
+├── Black-Scholes
+│
+├── Algorithmic Trading
+│
+├── Backtesting
+│
+├── Portfolio Analysis
+│
+├── NautilusTrader
+│
+└── AI Engineering
