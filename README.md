@@ -1,3 +1,5 @@
+<div align="center">
+
 # 👋 Olá, eu sou Márcio Reis
 
 ### Quantitative Developer • Software Developer • Python • Financial Research
@@ -15,12 +17,14 @@ e sistemas para pesquisa quantitativa.
   <img src="https://img.shields.io/badge/LinkedIn-Márcio_Reis-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
 
+</div>
+
 ---
 
 <table>
 <tr>
 
-<td width="65%">
+<td width="55%" valign="top">
 
 ## 🚀 Sobre mim
 
@@ -40,16 +44,24 @@ Meu objetivo é transformar **dados, matemática e código em ferramentas úteis
 
 </td>
 
-<td width="35%" align="center">
+<td width="45%" align="center" valign="middle">
+
+<img
+  src="https://github.com/user-attachments/assets/482999ca-5d1d-4440-baeb-d04f626ec008"
+  width="100%"
+  alt="Hub Neon de Dados e IA"
+/>
 
 </td>
-<img width="1254" height="1254" alt="Hub Neon de Dados e IA" src="https://github.com/user-attachments/assets/482999ca-5d1d-4440-baeb-d04f626ec008" />
+
 </tr>
 </table>
 
 ---
 
 ## 🔬 Atualmente
+
+🎓 Cursando **Full Stack Developer — Programa Autonomia e Renda, SENAI + Petrobras**
 
 🧪 Desenvolvendo o **Laboratório Quantitativo**
 
@@ -109,18 +121,6 @@ A aplicação calcula limites de gastos e acompanha automaticamente o saldo disp
 
 ---
 
-## ⚙️ Práticas DevOps
-
-Laboratório pessoal de DevOps contendo automações, scripts, monitoramento, Docker e infraestrutura.
-
-**Principais tecnologias:**
-
-`Linux` `Bash` `Docker` `Docker Compose` `PostgreSQL`
-
-🔗 [Ver repositório](https://github.com/kamikazedojapan/Praticas-DevOps-2026)
-
----
-
 # 🛠️ Tech Stack
 
 ## 🐍 Quant & Data
@@ -151,11 +151,10 @@ Laboratório pessoal de DevOps contendo automações, scripts, monitoramento, Do
 
 ---
 
-## ⚙️ DevOps & Tools
+## 🧰 Tools
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
@@ -183,3 +182,112 @@ Quantitative Finance
 ├── NautilusTrader
 │
 └── AI Engineering
+```
+
+📊 GitHub Analytics
+<div align="center">
+
+<img
+  height="180em"
+  src="https://github-readme-stats.vercel.app/api?username=kamikazedojapan&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"
+/>
+<img
+  height="180em"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamikazedojapan&layout=compact&langs_count=8&theme=github_dark"
+/>
+</div>
+
+
+<div align="center">
+
+<img
+  src="https://github-readme-streak-stats.herokuapp.com/?user=kamikazedojapan&theme=github-dark-blue"
+/>
+</div>
+
+# 📈 GitHub Activity
+
+<div align="center">
+
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kamikazedojapan&theme=github_dark"
+  alt="GitHub Profile Summary"
+/>
+
+</div>
+
+# 🧠 Developer Profile
+
+```python
+marcio = {
+    "location": "Lauro de Freitas, Bahia - Brasil",
+
+    "current_focus": [
+        "Quantitative Development",
+        "Financial Engineering",
+        "Software Engineering"
+    ],
+
+    "main_stack": [
+        "Python",
+        "Pandas",
+        "Streamlit",
+        "JavaScript",
+        "Node.js"
+    ],
+
+    "studying": [
+        "Quantitative Finance",
+        "Algorithmic Trading",
+        "Statistics",
+        "Financial Engineering",
+        "AI Engineering"
+    ],
+
+    "building": [
+        "Quantitative research tools",
+        "Financial dashboards",
+        "Data-driven systems"
+    ]
+}
+```
+
+---
+
+# 🌐 Idiomas
+
+🇧🇷 **Português** — Nativo
+
+🇺🇸 **Inglês** — Fluente
+
+🇪🇸 **Espanhol** — Intermediário
+
+---
+
+# 📫 Vamos conectar?
+
+<div align="center">
+
+<a href="https://linkedin.com/in/marciodevjr">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+
+<a href="https://github.com/kamikazedojapan">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
+<a href="mailto:vi.nimarcio@hotmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+### 📊 Code • Data • Mathematics • Markets
+
+*"Transformando curiosidade em código e código em sistemas."*
+
+</div>
