@@ -47,7 +47,7 @@ Meu objetivo é transformar **dados, matemática e código em ferramentas úteis
 <td width="35%" align="center">
 
 </td>
-
+<img width="1254" height="1254" alt="Hub Neon de Dados e IA" src="https://github.com/user-attachments/assets/482999ca-5d1d-4440-baeb-d04f626ec008" />
 </tr>
 </table>
 
