@@ -63,7 +63,7 @@ Meu objetivo é transformar **dados, matemática e código em ferramentas úteis
 
 🎓 Cursando **Full Stack Developer — Programa Autonomia e Renda, SENAI + Petrobras**
 
-🧪 Desenvolvendo o **Laboratório Quantitativo**
+🧪 Desenvolvendo melhorias no fork do repositório **AI Operations Room**
 
 📊 Construindo ferramentas para pesquisa e avaliação de estratégias quantitativas
 
