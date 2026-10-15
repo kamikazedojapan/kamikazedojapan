@@ -2,10 +2,9 @@
 
 # 👋 Olá, eu sou Márcio Reis
 
-### Quantitative Developer • Software Developer • Python • Financial Research
+### Full Stack Developer • JavaScript • Node.js • React • Python
 
-Desenvolvo ferramentas orientadas por dados, aplicações financeiras  
-e sistemas para pesquisa quantitativa.
+Desenvolvo aplicações web, APIs e sistemas orientados a dados, com foco em **Full Stack Development** e **Engenharia de Software**.
 
 <br>
 
@@ -28,19 +27,20 @@ e sistemas para pesquisa quantitativa.
 
 ## 🚀 Sobre mim
 
-Sou desenvolvedor com interesse em **engenharia de software, análise quantitativa, mercados financeiros e sistemas orientados por dados**.
+Sou desenvolvedor com foco em **Full Stack Development**, construindo aplicações web e sistemas que conectam **front-end, back-end, bancos de dados, APIs, testes e deploy**.
 
-Atualmente concentro meus estudos e projetos na interseção entre:
+Atualmente concentro meus estudos e projetos em:
 
-- 🐍 Python
-- 📊 Análise de dados
-- 📈 Quantitative Finance
-- 🧮 Estatística e matemática aplicada
-- ⚙️ Engenharia de Software
+- 🌐 Desenvolvimento Front-end
+- ⚙️ Desenvolvimento Back-end
+- 🔌 APIs REST e integração entre serviços
+- 🗃️ Bancos de dados relacionais e NoSQL
+- 🧪 Testes automatizados
+- 🧱 Arquitetura e organização de software
 - 🤖 AI Engineering
-- 📉 Trading sistemático e algorítmico
+- 📊 Sistemas orientados a dados
 
-Meu objetivo é transformar **dados, matemática e código em ferramentas úteis para pesquisa, análise e tomada de decisão**.
+Meu objetivo é transformar conhecimento técnico em **software funcional, bem estruturado, documentado e demonstrável**.
 
 </td>
 
@@ -49,7 +49,7 @@ Meu objetivo é transformar **dados, matemática e código em ferramentas úteis
 <img
   src="https://github.com/user-attachments/assets/482999ca-5d1d-4440-baeb-d04f626ec008"
   width="100%"
-  alt="Hub Neon de Dados e IA"
+  alt="Hub de desenvolvimento, dados e IA"
 />
 
 </td>
@@ -59,35 +59,49 @@ Meu objetivo é transformar **dados, matemática e código em ferramentas úteis
 
 ---
 
-## 🔬 Atualmente
+## 🎯 Atualmente
 
 🎓 Cursando **Full Stack Developer — Programa Autonomia e Renda, SENAI + Petrobras**
 
-🧪 Desenvolvendo melhorias no fork do repositório **AI Operations Room**
+🌐 Desenvolvendo um novo **portfólio web em HTML, CSS e JavaScript** para centralizar meus principais projetos e competências
 
-📊 Construindo ferramentas para pesquisa e avaliação de estratégias quantitativas
+🤖 Evoluindo o **AI Operations Room** como case de Engenharia de Software e AI Engineering
 
-📈 Estudando **Quantitative Finance, Algorithmic Trading e Factor Investing**
+📊 Consolidando o **Laboratório Quantitativo** como aplicação orientada a dados, testes e deploy
 
-🧮 Aprofundando conhecimentos em **estatística, probabilidade e matemática financeira**
+📈 Mantendo o **US Quant Factor Dashboard** como case de software aplicado à análise quantitativa
 
-⚙️ Explorando arquitetura de sistemas de trading com **NautilusTrader**
-
-🤖 Estudando aplicações de **AI Engineering** em sistemas financeiros
+⚙️ Aprofundando conhecimentos em **APIs, arquitetura, testes, bancos de dados e desenvolvimento de aplicações completas**
 
 ---
 
-# 🚀 Featured Projects
+# 🚀 Projetos em Destaque
+
+Os projetos abaixo representam diferentes aplicações das minhas competências em **desenvolvimento de software**, usando AI e análise quantitativa como áreas de especialização.
+
+## 🤖 AI Operations Room
+
+Projeto de software voltado para exploração de **AI Engineering, arquitetura modular, persistência, configuração e testes automatizados**.
+
+O foco atual é consolidar um MVP estável e demonstrável, com atenção à organização do código, confiabilidade e documentação técnica.
+
+**Competências demonstradas:**
+
+`Python` `Software Architecture` `Testing` `Persistence` `AI Engineering` `Git`
+
+🔗 [Ver repositório](https://github.com/kamikazedojapan/AIOperationsRoom)
+
+---
 
 ## 🧪 Laboratório Quantitativo
 
-Plataforma experimental para pesquisa, backtesting e avaliação de estratégias quantitativas.
+Aplicação para pesquisa, backtesting e avaliação de estratégias quantitativas, desenvolvida como um ambiente reproduzível para experimentação e análise.
 
-O projeto foi criado como um ambiente para estudar e implementar conceitos de **quantitative finance**, permitindo experimentar estratégias, métricas e modelos de forma reproduzível.
+O projeto demonstra construção de software orientado a dados, interface interativa, testes automatizados e publicação de uma versão pública.
 
-**Principais tecnologias:**
+**Competências demonstradas:**
 
-`Python` `Pandas` `NumPy` `Streamlit` `Pytest`
+`Python` `Pandas` `NumPy` `Streamlit` `Pytest` `Data Analysis` `Deploy`
 
 🔗 [Ver repositório](https://github.com/kamikazedojapan/Laboratorio-Quantitativo)
 
@@ -95,96 +109,102 @@ O projeto foi criado como um ambiente para estudar e implementar conceitos de **
 
 ## 📊 US Quant Factor Dashboard
 
-Dashboard de pesquisa multifatorial voltado para análise sistemática de ações do mercado americano.
+Dashboard de pesquisa multifatorial para análise sistemática de ações do mercado americano.
 
-O projeto explora conceitos de **factor investing**, avaliação histórica e construção de sistemas quantitativos de análise.
+O projeto transforma conceitos de **factor investing** em uma aplicação estruturada, combinando processamento de dados, ranking multifatorial, visualização e testes.
 
-**Principais tecnologias:**
+**Competências demonstradas:**
 
-`Python` `Streamlit` `Pandas` `Quantitative Finance`
+`Python` `Pandas` `Streamlit` `Data Processing` `Testing` `Quantitative Research`
 
 🔗 [Ver repositório](https://github.com/kamikazedojapan/US-Quant-Factor-Dashboard)
 
 ---
 
-## 💰 Fluxo Controle de Gastos
+# 🛠️ Tech Stack
 
-Sistema web para organização financeira e controle de orçamento diário e mensal.
+## 🌐 Front-end
 
-A aplicação calcula limites de gastos e acompanha automaticamente o saldo disponível ao longo do mês.
-
-**Principais tecnologias:**
-
-`Node.js` `Express` `MongoDB` `JavaScript`
-
-🔗 [Ver repositório](https://github.com/kamikazedojapan/Fluxo_Controle_de_Gastos)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 ---
 
-# 🛠️ Tech Stack
+## ⚙️ Back-end
 
-## 🐍 Quant & Data
-
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Ruby on Rails](https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white)
+
+---
+
+## 🗃️ Bancos de Dados
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+---
+
+## 📊 Data & AI
+
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
 ---
 
-## 🌐 Web Development
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-
----
-
-## 🗃️ Databases
-
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-
----
-
-## 🧰 Tools
+## 🧰 Engenharia & Ferramentas
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
 
-# 📚 Atualmente estudando
+# 📚 Foco de Desenvolvimento
 
 ```text
-Quantitative Finance
+Full Stack Development
 │
-├── 📊 Estatística & Probabilidade
+├── 🌐 Front-end
+│   ├── HTML semântico
+│   ├── CSS responsivo
+│   ├── JavaScript
+│   ├── TypeScript
+│   └── React
 │
-├── 📈 Factor Investing
+├── ⚙️ Back-end
+│   ├── Node.js
+│   ├── Express
+│   ├── Python
+│   ├── APIs REST
+│   └── Autenticação e validação
 │
-├── 🧮 Matemática Financeira
+├── 🗃️ Dados
+│   ├── MySQL
+│   ├── SQLite
+│   ├── MongoDB
+│   └── Modelagem de dados
 │
-├── Black-Scholes
-│
-├── Algorithmic Trading
-│
-├── Backtesting
-│
-├── Portfolio Analysis
-│
-├── NautilusTrader
-│
-└── AI Engineering
+└── 🧱 Engenharia de Software
+    ├── Git & GitHub
+    ├── Testes automatizados
+    ├── Clean Code
+    ├── Arquitetura
+    ├── Docker
+    └── Deploy
 ```
 
-📊 GitHub Analytics
+---
+
+# 📊 GitHub Analytics
+
 <div align="center">
 
 <img
@@ -195,15 +215,18 @@ Quantitative Finance
   height="180em"
   src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamikazedojapan&layout=compact&langs_count=8&theme=github_dark"
 />
-</div>
 
+</div>
 
 <div align="center">
 
 <img
   src="https://github-readme-streak-stats.herokuapp.com/?user=kamikazedojapan&theme=github-dark-blue"
 />
+
 </div>
+
+---
 
 # 📈 GitHub Activity
 
@@ -216,38 +239,37 @@ Quantitative Finance
 
 </div>
 
+---
+
 # 🧠 Developer Profile
 
 ```python
 marcio = {
-    "location": "Lauro de Freitas, Bahia - Brasil",
+    "role": "Full Stack Developer",
 
-    "current_focus": [
-        "Quantitative Development",
-        "Financial Engineering",
-        "Software Engineering"
+    "main_focus": [
+        "Web Development",
+        "Software Engineering",
+        "Backend Development"
     ],
 
-    "main_stack": [
-        "Python",
-        "Pandas",
-        "Streamlit",
-        "JavaScript",
-        "Node.js"
-    ],
+    "stack": {
+        "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
+        "backend": ["Node.js", "Express", "Python", "Ruby on Rails"],
+        "databases": ["MySQL", "SQLite", "MongoDB"],
+        "tools": ["Git", "GitHub", "Docker"]
+    },
 
-    "studying": [
-        "Quantitative Finance",
-        "Algorithmic Trading",
-        "Statistics",
-        "Financial Engineering",
-        "AI Engineering"
+    "specializations": [
+        "AI Engineering",
+        "Data-driven Applications",
+        "Quantitative Software"
     ],
 
     "building": [
-        "Quantitative research tools",
-        "Financial dashboards",
-        "Data-driven systems"
+        "Full stack applications",
+        "APIs and backend systems",
+        "Data-driven tools"
     ]
 }
 ```
@@ -286,8 +308,8 @@ marcio = {
 
 <div align="center">
 
-### 📊 Code • Data • Mathematics • Markets
+### 🌐 Full Stack • Software Engineering • Data • AI
 
-*"Transformando curiosidade em código e código em sistemas."*
+*"Construindo software, transformando conhecimento em projetos reais."*
 
 </div>
