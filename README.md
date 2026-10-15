@@ -8,17 +8,15 @@ Desenvolvo aplicações web, APIs e sistemas orientados a dados, com foco em **F
 
 <br>
 
-<a href="https://github.com/kamikazedojapan">
-  <img src="https://img.shields.io/badge/GitHub-kamikazedojapan-181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
 <a href="https://linkedin.com/in/marciodevjr">
   <img src="https://img.shields.io/badge/LinkedIn-Márcio_Reis-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
 
 </div>
 
----
+<br><br>
+
+<img width="1448" height="1086" alt="Workspace Full Stack em Neon" src="https://github.com/user-attachments/assets/2d9489e0-25d2-4ebe-b6f0-b20b07739e81" />
 
 <table>
 <tr>
@@ -41,16 +39,6 @@ Atualmente concentro meus estudos e projetos em:
 - 📊 Sistemas orientados a dados
 
 Meu objetivo é transformar conhecimento técnico em **software funcional, bem estruturado, documentado e demonstrável**.
-
-</td>
-
-<td width="45%" align="center" valign="middle">
-
-<img
-  src="https://github.com/user-attachments/assets/482999ca-5d1d-4440-baeb-d04f626ec008"
-  width="100%"
-  alt="Hub de desenvolvimento, dados e IA"
-/>
 
 </td>
 
