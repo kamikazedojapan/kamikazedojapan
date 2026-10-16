@@ -221,6 +221,12 @@ Full Stack Development
 <div align="center">
 
 <img
+  src="https://ghchart.xqsit94.in/dark:default/kamikazedojapan"
+  alt="GitHub Contributions"
+  width="70%"
+/>
+
+<img
   src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kamikazedojapan&theme=github_dark"
   alt="GitHub Profile Summary"
 />
