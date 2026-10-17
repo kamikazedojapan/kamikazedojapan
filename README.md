@@ -219,7 +219,11 @@ Full Stack Development
 
 <div align="center">
 
-<img src="https://github.com/users/kamikazedojapan/contributions">
+<img
+  src="./assets/github-contributions.svg"
+  alt="GitHub Contributions"
+  width="100%"
+/>
 
 <img
   src="https://github-readme-activity-graph-ebon-five.vercel.app/graph?username=kamikazedojapan&bg_color=000000&color=ffffff&line=39d353&point=39d353&area=true&hide_border=true"
