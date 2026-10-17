@@ -25,9 +25,12 @@ jobs:
         shell: bash
         run: |
           python <<'PY'
+          from calendar import month_abbr
+          from datetime import date, timedelta
+          from html.parser import HTMLParser
           from pathlib import Path
           from urllib.request import Request, urlopen
-          import re
+          import html as html_lib
 
           USERNAME = "kamikazedojapan"
           URL = f"https://github.com/users/{USERNAME}/contributions"
@@ -42,57 +45,110 @@ jobs:
           )
 
           with urlopen(request, timeout=30) as response:
-              html = response.read().decode("utf-8")
+              page = response.read().decode("utf-8")
 
-          match = re.search(
-              r'(<svg\b[^>]*class="[^"]*(?:js-calendar-graph-svg|ContributionCalendar-grid)[^"]*"[^>]*>.*?</svg>)',
-              html,
-              re.DOTALL,
-          )
+          class ContributionParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.cells = []
 
-          if not match:
-              match = re.search(r'(<svg\b[^>]*>.*?</svg>)', html, re.DOTALL)
+              def handle_starttag(self, tag, attrs):
+                  attributes = dict(attrs)
+                  day = attributes.get("data-date")
+                  level = attributes.get("data-level")
+                  if day is None or level is None:
+                      return
+                  try:
+                      parsed_day = date.fromisoformat(day)
+                      parsed_level = max(0, min(4, int(level)))
+                  except (ValueError, TypeError):
+                      return
+                  self.cells.append((parsed_day, parsed_level))
 
-          if not match:
-              raise RuntimeError("GitHub contribution SVG was not found in the response.")
+          parser = ContributionParser()
+          parser.feed(page)
 
-          svg = match.group(1)
+          if not parser.cells:
+              raise RuntimeError("No GitHub contribution cells were found in the response.")
 
-          if "xmlns=" not in svg[:300]:
-              svg = svg.replace(
-                  "<svg ",
-                  '<svg xmlns="http://www.w3.org/2000/svg" ',
-                  1,
+          cells = sorted(set(parser.cells), key=lambda item: item[0])
+          first_day = cells[0][0]
+          last_day = cells[-1][0]
+          anchor = first_day - timedelta(days=(first_day.weekday() + 1) % 7)
+
+          square = 10
+          gap = 3
+          step = square + gap
+          left = 31
+          top = 20
+
+          max_week = max((day - anchor).days // 7 for day, _ in cells)
+          grid_width = (max_week + 1) * step
+          width = left + grid_width + 12
+          height = 128
+
+          colors = {
+              0: "#161b22",
+              1: "#0e4429",
+              2: "#006d32",
+              3: "#26a641",
+              4: "#39d353",
+          }
+
+          parts = [
+              f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-label="GitHub contribution calendar for {USERNAME}">',
+              '<style>text{fill:#8b949e;font:10px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}</style>',
+          ]
+
+          # Month labels, positioned like GitHub's contribution calendar.
+          month_cursor = date(first_day.year, first_day.month, 1)
+          previous_x = -100
+          while month_cursor <= last_day:
+              week = (month_cursor - anchor).days // 7
+              x = left + max(0, week) * step
+              if x - previous_x >= 28:
+                  label = html_lib.escape(month_abbr[month_cursor.month])
+                  parts.append(f'<text x="{x}" y="10">{label}</text>')
+                  previous_x = x
+              if month_cursor.month == 12:
+                  month_cursor = date(month_cursor.year + 1, 1, 1)
+              else:
+                  month_cursor = date(month_cursor.year, month_cursor.month + 1, 1)
+
+          # GitHub-style weekday labels.
+          for label, row in (("Mon", 1), ("Wed", 3), ("Fri", 5)):
+              y = top + row * step + 9
+              parts.append(f'<text x="0" y="{y}">{label}</text>')
+
+          # Contribution squares using GitHub's dark-theme color scale.
+          for day, level in cells:
+              week = (day - anchor).days // 7
+              weekday = (day.weekday() + 1) % 7
+              x = left + week * step
+              y = top + weekday * step
+              parts.append(
+                  f'<rect x="{x}" y="{y}" width="{square}" height="{square}" rx="2" '
+                  f'fill="{colors[level]}" data-date="{day.isoformat()}" data-level="{level}" />'
               )
 
-          style = r'''<style>
-          :root { color-scheme: dark; }
-          .ContributionCalendar-label {
-            fill: #8b949e !important;
-            font: 10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-          }
-          .ContributionCalendar-day[data-level="0"] { fill: #161b22 !important; }
-          .ContributionCalendar-day[data-level="1"] { fill: #0e4429 !important; }
-          .ContributionCalendar-day[data-level="2"] { fill: #006d32 !important; }
-          .ContributionCalendar-day[data-level="3"] { fill: #26a641 !important; }
-          .ContributionCalendar-day[data-level="4"] { fill: #39d353 !important; }
-          rect[data-level="0"] { fill: #161b22 !important; }
-          rect[data-level="1"] { fill: #0e4429 !important; }
-          rect[data-level="2"] { fill: #006d32 !important; }
-          rect[data-level="3"] { fill: #26a641 !important; }
-          rect[data-level="4"] { fill: #39d353 !important; }
-          text {
-            fill: #8b949e;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-          }
-          </style>'''
+          # Contribution legend.
+          legend_y = 116
+          legend_x = max(left, width - 119)
+          parts.append(f'<text x="{legend_x}" y="{legend_y + 8}">Less</text>')
+          legend_square_x = legend_x + 27
+          for level in range(5):
+              x = legend_square_x + level * step
+              parts.append(
+                  f'<rect x="{x}" y="{legend_y}" width="{square}" height="{square}" rx="2" fill="{colors[level]}" />'
+              )
+          parts.append(f'<text x="{legend_square_x + 5 * step + 2}" y="{legend_y + 8}">More</text>')
 
-          opening_tag_end = svg.find(">") + 1
-          svg = svg[:opening_tag_end] + style + svg[opening_tag_end:]
+          parts.append("</svg>")
+          svg = "\n".join(parts) + "\n"
 
           output = Path("assets/github-contributions.svg")
           output.parent.mkdir(parents=True, exist_ok=True)
-          output.write_text(svg + "\n", encoding="utf-8")
+          output.write_text(svg, encoding="utf-8")
           PY
 
       - name: Commit updated contribution calendar
