@@ -215,20 +215,22 @@ Full Stack Development
 </div>
 
 ---
-
 # 📈 GitHub Activity
 
 <div align="center">
 
+<img src="https://github.com/users/kamikazedojapan/contributions">
+
 <img
-  src="https://ghchart.xqsit94.in/dark:default/kamikazedojapan"
-  alt="GitHub Contributions"
-  width="70%"
+  src="https://github-readme-activity-graph-ebon-five.vercel.app/graph?username=kamikazedojapan&bg_color=000000&color=ffffff&line=39d353&point=39d353&area=true&hide_border=true"
+  alt="GitHub Activity Graph"
+  width="100%"
 />
 
 <img
   src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kamikazedojapan&theme=github_dark"
   alt="GitHub Profile Summary"
+  width="100%"
 />
 
 </div>
