@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>GitHub Contributions — Márcio Reis</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #0d1117;
+      --border: #30363d;
+      --text: #f0f6fc;
+      --muted: #8b949e;
+      --level-0: #161b22;
+      --level-1: #0e4429;
+      --level-2: #006d32;
+      --level-3: #26a641;
+      --level-4: #39d353;
+      --tooltip: #6e7681;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .card {
+      width: min(100%, 930px);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      padding: 18px 20px 16px;
+    }
+
+    .header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .header a {
+      color: #58a6ff;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .header a:hover { text-decoration: underline; }
+
+    .scroll {
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .calendar-wrap {
+      width: max-content;
+      min-width: 100%;
+    }
+
+    .months {
+      position: relative;
+      height: 18px;
+      margin-left: 34px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 14px;
+    }
+
+    .month-label {
+      position: absolute;
+      top: 0;
+      white-space: nowrap;
+    }
+
+    .calendar-row {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .weekdays {
+      width: 34px;
+      flex: 0 0 34px;
+      display: grid;
+      grid-template-rows: repeat(7, 11px);
+      row-gap: 3px;
+      color: var(--muted);
+      font-size: 9px;
+      line-height: 11px;
+    }
+
+    .weekdays span:nth-child(1) { grid-row: 2; }
+    .weekdays span:nth-child(2) { grid-row: 4; }
+    .weekdays span:nth-child(3) { grid-row: 6; }
+
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(7, 11px);
+      grid-auto-columns: 11px;
+      gap: 3px;
+      min-height: 95px;
+    }
+
+    .day {
+      width: 11px;
+      height: 11px;
+      padding: 0;
+      border: 0;
+      border-radius: 2px;
+      outline: 1px solid rgba(255,255,255,.025);
+      cursor: pointer;
+    }
+
+    .day:hover,
+    .day:focus-visible {
+      outline: 1px solid #f0f6fc;
+      outline-offset: 1px;
+    }
+
+    .level-0 { background: var(--level-0); }
+    .level-1 { background: var(--level-1); }
+    .level-2 { background: var(--level-2); }
+    .level-3 { background: var(--level-3); }
+    .level-4 { background: var(--level-4); }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    .legend-square {
+      width: 11px;
+      height: 11px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    .tooltip {
+      position: fixed;
+      z-index: 9999;
+      display: none;
+      pointer-events: none;
+      max-width: 280px;
+      padding: 7px 9px;
+      border-radius: 6px;
+      background: var(--tooltip);
+      color: #fff;
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,.35);
+      transform: translate(-50%, calc(-100% - 10px));
+    }
+
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      width: 10px;
+      height: 10px;
+      background: var(--tooltip);
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .status {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 18px 0;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 8px; }
+      .card { padding: 14px 12px; }
+      .header { align-items: flex-start; flex-direction: column; gap: 4px; }
+      .footer { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" aria-labelledby="title">
+    <div class="header">
+      <h1 id="title">GitHub Contributions</h1>
+      <a href="https://github.com/kamikazedojapan" target="_blank" rel="noopener noreferrer">@kamikazedojapan</a>
+    </div>
+
+    <div id="status" class="status">Carregando contribuições…</div>
+
+    <div id="calendar" hidden>
+      <div class="scroll">
+        <div class="calendar-wrap">
+          <div id="months" class="months" aria-hidden="true"></div>
+          <div class="calendar-row">
+            <div class="weekdays" aria-hidden="true">
+              <span>seg</span>
+              <span>qua</span>
+              <span>sex</span>
+            </div>
+            <div id="grid" class="grid" role="grid" aria-label="Calendário de contribuições do GitHub"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span id="total"></span>
+        <div class="legend" aria-label="Escala de intensidade de contribuições">
+          <span>Menos</span>
+          <span class="legend-square level-0"></span>
+          <span class="legend-square level-1"></span>
+          <span class="legend-square level-2"></span>
+          <span class="legend-square level-3"></span>
+          <span class="legend-square level-4"></span>
+          <span>Mais</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="tooltip" class="tooltip" role="tooltip"></div>
+
+  <script>
+    const COLORS = ["level-0", "level-1", "level-2", "level-3", "level-4"];
+    const STEP = 14;
+    const MONTHS = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+
+    const statusEl = document.getElementById("status");
+    const calendarEl = document.getElementById("calendar");
+    const gridEl = document.getElementById("grid");
+    const monthsEl = document.getElementById("months");
+    const totalEl = document.getElementById("total");
+    const tooltipEl = document.getElementById("tooltip");
+
+    function utcDate(iso) {
+      const [year, month, day] = iso.split("-").map(Number);
+      return new Date(Date.UTC(year, month - 1, day));
+    }
+
+    function dayDiff(a, b) {
+      return Math.floor((a.getTime() - b.getTime()) / 86400000);
+    }
+
+    function startOfWeekSunday(date) {
+      const result = new Date(date);
+      result.setUTCDate(result.getUTCDate() - result.getUTCDay());
+      return result;
+    }
+
+    function formatDate(iso) {
+      return new Intl.DateTimeFormat("pt-BR", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        timeZone: "UTC"
+      }).format(utcDate(iso));
+    }
+
+    function tooltipText(day) {
+      const noun = day.count === 1 ? "contribuição" : "contribuições";
+      return `${day.count} ${noun} em ${formatDate(day.date)}`;
+    }
+
+    function showTooltip(day, x, y) {
+      tooltipEl.textContent = tooltipText(day);
+      tooltipEl.style.left = `${x}px`;
+      tooltipEl.style.top = `${y}px`;
+      tooltipEl.style.display = "block";
+    }
+
+    function hideTooltip() {
+      tooltipEl.style.display = "none";
+    }
+
+    function renderMonths(days, anchor, weekCount) {
+      monthsEl.innerHTML = "";
+      monthsEl.style.width = `${weekCount * STEP}px`;
+
+      let lastMonth = -1;
+      let lastX = -100;
+      for (const day of days) {
+        const date = utcDate(day.date);
+        const month = date.getUTCMonth();
+        if (month === lastMonth) continue;
+
+        const week = Math.floor(dayDiff(startOfWeekSunday(date), anchor) / 7);
+        const x = week * STEP;
+        if (x - lastX >= 28) {
+          const label = document.createElement("span");
+          label.className = "month-label";
+          label.style.left = `${x}px`;
+          label.textContent = MONTHS[month];
+          monthsEl.appendChild(label);
+          lastX = x;
+        }
+        lastMonth = month;
+      }
+    }
+
+    function render(data) {
+      const days = [...data.days].sort((a, b) => a.date.localeCompare(b.date));
+      if (!days.length) throw new Error("Nenhum dia de contribuição foi encontrado.");
+
+      const first = utcDate(days[0].date);
+      const last = utcDate(days[days.length - 1].date);
+      const anchor = startOfWeekSunday(first);
+      const weekCount = Math.floor(dayDiff(startOfWeekSunday(last), anchor) / 7) + 1;
+
+      gridEl.innerHTML = "";
+      gridEl.style.gridTemplateColumns = `repeat(${weekCount}, 11px)`;
+      renderMonths(days, anchor, weekCount);
+
+      for (const day of days) {
+        const date = utcDate(day.date);
+        const week = Math.floor(dayDiff(startOfWeekSunday(date), anchor) / 7);
+        const weekday = date.getUTCDay();
+        const square = document.createElement("button");
+        square.type = "button";
+        square.className = `day ${COLORS[Math.max(0, Math.min(4, Number(day.level) || 0))]}`;
+        square.style.gridColumn = String(week + 1);
+        square.style.gridRow = String(weekday + 1);
+        square.setAttribute("role", "gridcell");
+        square.setAttribute("aria-label", tooltipText(day));
+        square.dataset.date = day.date;
+        square.dataset.count = String(day.count);
+
+        square.addEventListener("mouseenter", (event) => {
+          const rect = event.currentTarget.getBoundingClientRect();
+          showTooltip(day, rect.left + rect.width / 2, rect.top);
+        });
+        square.addEventListener("mousemove", (event) => {
+          showTooltip(day, event.clientX, event.clientY);
+        });
+        square.addEventListener("mouseleave", hideTooltip);
+        square.addEventListener("focus", (event) => {
+          const rect = event.currentTarget.getBoundingClientRect();
+          showTooltip(day, rect.left + rect.width / 2, rect.top);
+        });
+        square.addEventListener("blur", hideTooltip);
+
+        gridEl.appendChild(square);
+      }
+
+      totalEl.textContent = `${data.total.toLocaleString("pt-BR")} contribuições no período`;
+      statusEl.hidden = true;
+      calendarEl.hidden = false;
+    }
+
+    fetch("./data.json", { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then(render)
+      .catch((error) => {
+        console.error(error);
+        statusEl.textContent = "Não foi possível carregar o calendário de contribuições.";
+      });
+  </script>
+</body>
+</html>
