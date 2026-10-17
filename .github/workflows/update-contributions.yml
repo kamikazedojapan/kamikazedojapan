@@ -21,16 +21,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate contribution calendar SVG from GitHub
+      - name: Generate contribution calendar data from GitHub
         shell: bash
         run: |
           python <<'PY'
           from calendar import month_abbr
-          from datetime import date, timedelta
+          from datetime import date, datetime, timedelta, timezone
           from html.parser import HTMLParser
           from pathlib import Path
           from urllib.request import Request, urlopen
           import html as html_lib
+          import json
+          import re
 
           USERNAME = "kamikazedojapan"
           URL = f"https://github.com/users/{USERNAME}/contributions"
@@ -41,6 +43,8 @@ jobs:
                   "User-Agent": "Mozilla/5.0",
                   "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
                   "Accept-Language": "en-US,en;q=0.9",
+                  "Referer": f"https://github.com/{USERNAME}",
+                  "X-Requested-With": "XMLHttpRequest",
               },
           )
 
@@ -51,19 +55,53 @@ jobs:
               def __init__(self):
                   super().__init__()
                   self.cells = []
+                  self.tooltips = {}
+                  self._tooltip_for = None
+                  self._tooltip_text = []
 
               def handle_starttag(self, tag, attrs):
                   attributes = dict(attrs)
+
                   day = attributes.get("data-date")
                   level = attributes.get("data-level")
-                  if day is None or level is None:
-                      return
-                  try:
-                      parsed_day = date.fromisoformat(day)
-                      parsed_level = max(0, min(4, int(level)))
-                  except (ValueError, TypeError):
-                      return
-                  self.cells.append((parsed_day, parsed_level))
+                  if day is not None and level is not None:
+                      try:
+                          parsed_day = date.fromisoformat(day)
+                          parsed_level = max(0, min(4, int(level)))
+                      except (ValueError, TypeError):
+                          pass
+                      else:
+                          self.cells.append({
+                              "date": parsed_day,
+                              "level": parsed_level,
+                              "id": attributes.get("id"),
+                              "label": attributes.get("aria-label") or attributes.get("title"),
+                          })
+
+                  if tag == "tool-tip":
+                      self._tooltip_for = attributes.get("for")
+                      self._tooltip_text = []
+
+              def handle_data(self, data):
+                  if self._tooltip_for is not None:
+                      self._tooltip_text.append(data)
+
+              def handle_endtag(self, tag):
+                  if tag == "tool-tip" and self._tooltip_for is not None:
+                      text = html_lib.unescape("".join(self._tooltip_text)).strip()
+                      self.tooltips[self._tooltip_for] = text
+                      self._tooltip_for = None
+                      self._tooltip_text = []
+
+          def parse_count(text):
+              if not text:
+                  return None
+              match = re.search(r"\b(\d[\d,]*)\s+contributions?\b", text, re.IGNORECASE)
+              if match:
+                  return int(match.group(1).replace(",", ""))
+              if re.search(r"\bNo\s+contributions?\b", text, re.IGNORECASE):
+                  return 0
+              return None
 
           parser = ContributionParser()
           parser.feed(page)
@@ -71,9 +109,27 @@ jobs:
           if not parser.cells:
               raise RuntimeError("No GitHub contribution cells were found in the response.")
 
-          cells = sorted(set(parser.cells), key=lambda item: item[0])
-          first_day = cells[0][0]
-          last_day = cells[-1][0]
+          by_date = {}
+          for cell in parser.cells:
+              count = parse_count(cell.get("label"))
+              if count is None and cell.get("id"):
+                  count = parse_count(parser.tooltips.get(cell["id"]))
+              if count is None and cell["level"] == 0:
+                  count = 0
+              if count is None:
+                  raise RuntimeError(
+                      f"Exact contribution count was not found for {cell['date'].isoformat()}."
+                  )
+
+              by_date[cell["date"]] = {
+                  "date": cell["date"],
+                  "level": cell["level"],
+                  "count": count,
+              }
+
+          cells = [by_date[day] for day in sorted(by_date)]
+          first_day = cells[0]["date"]
+          last_day = cells[-1]["date"]
           anchor = first_day - timedelta(days=(first_day.weekday() + 1) % 7)
 
           square = 10
@@ -82,7 +138,7 @@ jobs:
           left = 31
           top = 20
 
-          max_week = max((day - anchor).days // 7 for day, _ in cells)
+          max_week = max((cell["date"] - anchor).days // 7 for cell in cells)
           grid_width = (max_week + 1) * step
           width = left + grid_width + 12
           height = 128
@@ -100,7 +156,6 @@ jobs:
               '<style>text{fill:#8b949e;font:10px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}</style>',
           ]
 
-          # Month labels, positioned like GitHub's contribution calendar.
           month_cursor = date(first_day.year, first_day.month, 1)
           previous_x = -100
           while month_cursor <= last_day:
@@ -115,23 +170,26 @@ jobs:
               else:
                   month_cursor = date(month_cursor.year, month_cursor.month + 1, 1)
 
-          # GitHub-style weekday labels.
           for label, row in (("Mon", 1), ("Wed", 3), ("Fri", 5)):
               y = top + row * step + 9
               parts.append(f'<text x="0" y="{y}">{label}</text>')
 
-          # Contribution squares using GitHub's dark-theme color scale.
-          for day, level in cells:
+          for cell in cells:
+              day = cell["date"]
+              level = cell["level"]
+              count = cell["count"]
               week = (day - anchor).days // 7
               weekday = (day.weekday() + 1) % 7
               x = left + week * step
               y = top + weekday * step
+              noun = "contribution" if count == 1 else "contributions"
+              title = html_lib.escape(f"{count} {noun} on {day.isoformat()}")
               parts.append(
                   f'<rect x="{x}" y="{y}" width="{square}" height="{square}" rx="2" '
-                  f'fill="{colors[level]}" data-date="{day.isoformat()}" data-level="{level}" />'
+                  f'fill="{colors[level]}" data-date="{day.isoformat()}" data-level="{level}" data-count="{count}">'
+                  f'<title>{title}</title></rect>'
               )
 
-          # Contribution legend.
           legend_y = 116
           legend_x = max(left, width - 119)
           parts.append(f'<text x="{legend_x}" y="{legend_y + 8}">Less</text>')
@@ -146,9 +204,31 @@ jobs:
           parts.append("</svg>")
           svg = "\n".join(parts) + "\n"
 
-          output = Path("assets/github-contributions.svg")
-          output.parent.mkdir(parents=True, exist_ok=True)
-          output.write_text(svg, encoding="utf-8")
+          svg_output = Path("assets/github-contributions.svg")
+          svg_output.parent.mkdir(parents=True, exist_ok=True)
+          svg_output.write_text(svg, encoding="utf-8")
+
+          data_output = Path("docs/contributions/data.json")
+          data_output.parent.mkdir(parents=True, exist_ok=True)
+          payload = {
+              "username": USERNAME,
+              "generated_at": datetime.now(timezone.utc).isoformat(),
+              "from": first_day.isoformat(),
+              "to": last_day.isoformat(),
+              "total": sum(cell["count"] for cell in cells),
+              "days": [
+                  {
+                      "date": cell["date"].isoformat(),
+                      "level": cell["level"],
+                      "count": cell["count"],
+                  }
+                  for cell in cells
+              ],
+          }
+          data_output.write_text(
+              json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n",
+              encoding="utf-8",
+          )
           PY
 
       - name: Commit updated contribution calendar
@@ -156,7 +236,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/github-contributions.svg
+          git add assets/github-contributions.svg docs/contributions/data.json
 
           if git diff --cached --quiet; then
             echo "Contribution calendar is already up to date."
